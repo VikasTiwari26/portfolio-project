@@ -1,0 +1,145 @@
+.project-detail {
+    width: 95%;
+    margin: auto;
+    height: 95vh;
+    position: fixed;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 0.3rem;
+    top: 0;
+    z-index: 999;
+}
+
+.light-bg-project-detail {
+    background: #ddf8fe;
+    color: #000;
+}
+
+.dark-bg-project-detail {
+    background: #1b1b1b;
+    color: #fff;
+}
+
+.close-details {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 8px;
+}
+
+.project-detail-heading {}
+
+.project-detail-heading h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.about-project {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-description {
+    width: 50%;
+}
+
+.p-desc {
+    width: 80%;
+}
+
+.p-desc h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #fb982f;
+}
+
+.project-images {
+    width: 65%;
+    filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+}
+
+.project-images img {
+    /* position: absolute; */
+    max-height: 335px;
+    min-height: 335px;
+    min-width: 575px;
+    max-width: 575px;
+    filter: none;
+}
+
+.live-demo-btn button {
+    padding: 11px 26px 11px 26px;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.dir-btn {
+    cursor: pointer;
+}
+
+.slide-img-detail-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-slide-number {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.work {
+    padding: 5px;
+    margin: 0.5rem 0;
+}
+
+.work-container {
+    padding: 0 14px;
+}
+
+@media screen and (max-width: 480px) {
+    .project-detail {
+        overflow: auto;
+    }
+    .about-project {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .project-images {
+        width: 100%;
+    }
+    .project-images img {
+        max-height: 240px;
+        min-height: 240px;
+        max-width: 320px;
+        min-width: 320px;
+    }
+    .project-description {
+        width: 100%;
+    }
+
+    .work-container {
+        padding: 0 21px;
+    }
+
+    .live-demo-btn button {
+        width: 100%;
+    }
+
+    .close-details {
+        position: fixed;
+    }
+
+}
